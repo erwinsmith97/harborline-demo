@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# DEMO: change to "Allow: /" and add Sitemap line when delivered to a real client
