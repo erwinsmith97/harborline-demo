@@ -363,3 +363,6 @@ p { margin: 0; }
   .build__shade { background: linear-gradient(0deg, rgba(12, 13, 15, .92) 0%, rgba(12, 13, 15, .62) 48%, rgba(12, 13, 15, .12) 78%); }
 }
 @media (max-width: 680px) { .build__beats { bottom: 104px; } .build__hint { bottom: 92px; } }
+/* skip link: invisible until a keyboard user tabs to it */
+.build__skip:not(:focus) { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; transform: none; }
+.build__skip:focus { position: fixed; top: 8px; left: 16px; transform: none; }
