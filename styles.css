@@ -366,3 +366,6 @@ p { margin: 0; }
 /* skip link: invisible until a keyboard user tabs to it */
 .build__skip:not(:focus) { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; transform: none; }
 .build__skip:focus { position: fixed; top: 8px; left: 16px; transform: none; }
+/* slower scroll: more scrolling per stop (30 Sep, owner request) */
+.build { height: 1800vh; }
+@media (max-width: 680px) { .build { height: 1600vh; } }
